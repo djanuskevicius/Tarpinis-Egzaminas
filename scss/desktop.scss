@@ -1,0 +1,220 @@
+@media (min-width: 1000px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "one one"
+    "two two"
+    "three three"
+    "five four "
+    "six seven"
+    "nine eight"
+    "ten ten"
+    "eleven eleven"
+    "twelve twelve";
+
+    #one {
+      grid-area: one;
+    }
+
+    #two {
+      grid-area: two;
+    }
+
+    #three {
+      grid-area: three;
+    }
+
+    #four {
+      grid-area: four;
+    }
+
+    #five {
+      grid-area: five;
+    }
+
+    #six {
+      grid-area: six;
+    }
+
+    #seven {
+      grid-area: seven;
+    }
+
+    #eight {
+      grid-area: eight;
+    }
+
+    #nine {
+      grid-area: nine;
+    }
+
+    #ten {
+      grid-area: ten;
+    }
+
+    #eleven {
+      grid-area: eleven;
+    }
+
+    #twelve {
+      grid-area: twelve;
+    }
+  }
+
+  header {
+    p {
+      margin-left: 12%;
+    }
+
+    .btn {
+      margin-right: 12%;
+    }
+  }
+
+  .hero:nth-of-type(1), #eleven {
+    padding: 240px 0;
+
+    h1 {
+      margin-right: 20%;
+      margin-left: 20%;
+    }
+
+    .h1 {
+      font-size: 4em;
+    }
+
+    form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+      .form-1 {
+      width: 35%;
+      margin-right: 10px;
+      }
+
+      .form-2 {
+
+        .signupbtn {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+      }
+    }
+  }
+
+  .atributes {
+    display: flex;
+    justify-content: center;
+    
+    .div {
+      width: 380px;
+      padding-bottom: 0;
+      margin: 0px 40px;
+
+      img:nth-of-type(1) {
+        width: 90px;
+      }
+
+      h2:nth-of-type(1) {
+        font-size: 2em;
+        padding-bottom: 10px;
+      }
+
+      p:nth-of-type(1) {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  #five, 
+  #seven, 
+  #nine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 150px;
+
+    h2:nth-of-type(1) {
+      font-size: 2.5em;
+      padding-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.5em;
+      line-height: 35px;
+    }
+  }
+
+  #four,
+  #six,
+  #eight {
+    height: 600px;
+  }
+
+  #ten {
+    padding-top: 120px;
+    padding-bottom: 60px;
+
+    h2 {
+      font-size: 2.5em;
+    }
+    #reviews {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      div {
+        width: 350px;
+        margin: 0 50px;
+      }
+
+      img {
+        width: 230px;
+      }
+
+      h4 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  #eleven {
+    padding: 120px 0;
+    
+    h1 {
+      font-size: 2.5em;
+      padding-bottom: 40px;
+    }
+  }
+
+  #twelve {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    padding: 90px 260px;
+
+    .links {
+      a {
+        font-size: 1.2em;
+      }
+
+      p {
+        font-size: 1em;
+        padding-bottom: 0;
+      }
+    }
+
+    .logos {
+      img {
+        width: 35px;
+      }
+    }
+  }
+}

@@ -1,0 +1,287 @@
+main {
+  display: grid;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $whiteish;
+  padding: 10px 40px;
+
+  button {
+    background: $blue;
+    color: $whiteish;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-family: lato;
+    padding: 10px 15px;
+
+    &:hover {
+      cursor: pointer;
+      background: #0456ad;
+    }
+  }
+
+  p {
+    font-size: 1.6em;
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/app/images/bg-masthead.jpg);
+  background-position: 2%;
+  padding: 180px 0px;
+  width: 100%;
+
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.9em;
+    padding: 0px 30px 70px 30px;
+  }
+
+  form {
+    width: 90%;
+
+    #email {
+      font-size: 1.6em;
+      font-family: lato;
+      border: none;
+      border-radius: 5px;
+      padding: 15px 15px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .signupbtn {
+      background: $blue;
+      color: $whiteish;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.5em;
+      font-family: lato;
+      padding: 15px 15px;
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+        background: #0456ad;
+      }
+    }
+  }
+}
+
+.atributes {
+  background: $whiteish;
+  padding: 180px 20px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 70px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+
+    h2 {
+      font-size: 2.4em;
+      padding-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.8em;
+      font-weight: 300;
+      line-height: 35px;
+    }
+
+    img {
+      width: 110px;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.img-bg-1 {
+  background: url(/app/images/bg-showcase-1.jpg);
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+}
+
+.img-bg-2 {
+  background: url(/app/images/bg-showcase-2.jpg);
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+}
+
+.img-bg-3 {
+  background: url(/app/images/bg-showcase-3.jpg);
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+}
+
+.pros {
+  background: white;
+  padding: 80px;
+
+  h2 {
+    font-size: 3.2em;
+    padding-bottom: 20px;
+  }
+
+  p {
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 40px;
+  }
+}
+
+.reviews {
+  background: $whiteish;
+  padding: 180px 50px;
+  text-align: center;
+
+  h2 {
+    font-size: 3em;
+    padding-bottom: 80px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 70%;
+      border-radius: 100%;
+      box-shadow: 0 8px 10px rgb(143, 143, 143);
+      margin-bottom: 20px
+    }
+
+    h4 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.4em;
+      font-weight: 300;
+      margin-bottom: 70px;
+    }
+
+  }
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/app/images/bg-masthead.jpg);
+  background-position: 2%;
+  padding: 180px 0px;
+  width: 100%;
+
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.9em;
+    padding: 0px 30px 70px 30px;
+  }
+
+  form {
+    width: 90%;
+
+    #email {
+      font-size: 1.6em;
+      font-family: lato;
+      border: none;
+      border-radius: 5px;
+      padding: 15px 15px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .signupbtn {
+      background: $blue;
+      color: $whiteish;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.5em;
+      font-family: lato;
+      padding: 15px 15px;
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+        background: #0456ad;
+      }
+    }
+  }
+}
+
+footer {
+  background: $whiteish;
+  padding: 100px 40px;
+  text-align: center;
+
+  a {
+    color: $blue;
+    font-size: 1.5em;
+
+    &:hover {
+      color: #0456ad;
+    }
+
+    &::before {
+      content: "• ";
+      color: rgba(0, 0, 0, 0.425);
+      margin: 6px;
+    }
+  }
+
+  a:nth-of-type(1) {
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .dot {
+    border: none;
+    border-top: 1px dashed #f00;
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 50%;
+  }
+
+  p {
+    font-size: 1.1em;
+    color: grey;
+    padding: 15px 0px 30px 0px;
+  }
+
+  img {
+    width: 40px;
+    margin: 0 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
